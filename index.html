@@ -1,109 +1,78 @@
-<!DOCTYPE html>
-<html>
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Weather Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            color: cadetblue;
+        }
+        #one{
+            color:coral; /*id selector*/
+         }
+        .two{
+            border: 1px solid black; /*class selector*/
+        } 
+      #parent {
+        height: 30vh;
+        width: 30vh;
+        background-color: lightgray;
+      }
+      #child{
+        height: 50%;
+        width: 50%;
+        background-color: coral;
+      }
+    </style>
 </head>
+<body>
+    <div id="parent">
+     <div id="child"></div>
 
-<body bgcolor="#87CEEB">
+ 
 
-    <h1 align="center"> Weather Information Portal</h1>
-    <hr>
+    <h1 id="one" class="two">hello</h1>
+   <h1 id ="one">hiii</h1>
+   <div class = "two">This is a div</div>
+    
+    HTML
+    <img src = "https://unsplash.com/photos/sunlight-streams-down-a-street-lined-with-parked-bicycles-LjyejV09vbI" alt="Sunlight streaming"/>
+    <video src = "" controls loop autoplay></video>
+    <audio src="" controls loop autoplay></audio>
+    <iframe  src=""></iframe>  
+</body>
+</html> -->
 
-    <!-- Location Section -->
-    <h2>Enter Location</h2>
-    <form>
-        City Name:
-        <input type="text" placeholder="Enter city name"><br><br>
-
-        Country:
-        <select>
-            <option>India</option>
-            <option>USA</option>
-            <option>UK</option>
-            <option>Australia</option>
-            <option>Canada</option>
-        </select><br><br>
-
-        <input type="submit" value="Check Weather">
-        <input type="reset" value="Clear">
-    </form>
-
-    <hr>
-
-    <!-- Current Weather -->
-    <h2>Current Weather</h2>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>City</th>
-            <th>Temperature</th>
-            <th>Condition</th>
-            <th>Humidity</th>
-        </tr>
-        <tr>
-            <td>Bhopal</td>
-            <td>32°C</td>
-            <td>Sunny</td>
-            <td>40%</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <!-- Weekly Forecast -->
-    <h2>7-Day Weather Forecast</h2>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Day</th>
-            <th>Max Temp</th>
-            <th>Min Temp</th>
-            <th>Weather</th>
-        </tr>
-        <tr>
-            <td>Monday</td>
-            <td>33°C</td>
-            <td>25°C</td>
-            <td>Sunny</td>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td>31°C</td>
-            <td>24°C</td>
-            <td>Cloudy</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td>30°C</td>
-            <td>23°C</td>
-            <td>Rainy</td>
-        </tr>
-        <tr>
-            <td>Thursday</td>
-            <td>32°C</td>
-            <td>24°C</td>
-            <td>Partly Cloudy</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>34°C</td>
-            <td>26°C</td>
-            <td>Sunny</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <!-- Weather Tips -->
-    <h2>Weather Tips</h2>
-    <ul>
-        <li>☀️ Stay hydrated in hot weather</li>
-        <li>🌧️ Carry an umbrella during rainy days</li>
-        <li>❄️ Wear warm clothes in cold weather</li>
-        <li>🌬️ Secure loose items during windy conditions</li>
-    </ul>
-
-    <hr>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>IRON MAN
+            <ol>
+                <li>Iron man 1</li> 
+                <li>Iron man 2</li>
+                <li>Iron man 3
+                    <ol>
+                        <li>Iron man 3(1)
+                            <ol>Iron man 3 (1)(i)</ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    
 </body>
 </html>
