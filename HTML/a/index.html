@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+       
+    }
+    body{
+        
+        background-color: white;
+    }
+    #one{
+           
+        background-color: black;
+        color: white;
+        height: 60px;
+        padding: 20px 30px;
+    }
+    #logo{
+         
+        font-size: 28px;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 0px;
+    }
+    #menu{
+    
+        display: inline-block;
+        margin-left: 1000px;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    #menu a{
+        color: white;
+    }
+    #card{
+         text-align: center;  
+        width: 100px;
+        margin-top: 80px;
+    }
+
+    .card{
+         text-align: center;  
+        width: 300px;
+        height: 450px;
+        border: 1px solid lightgray;
+        display: inline-block;
+        margin: 10px;
+        padding: 25px 15px;
+        border-radius: 15px;
+        background-color: white;
+    }
+
+    .badge{
+       width: 90px;
+      padding: 6px;
+      border-radius: 20px;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 200px;
+      margin-bottom: 10px; 
+    }
+
+    .online{
+        background-color: green;
+    }
+
+    .offline{
+        background-color: red;
+    }
+    .circle{
+        width: 100px;
+      height: 100px;
+      background-color: black;
+      border-radius: 50%;
+      margin: 15px auto;
+      color: white;
+      font-size: 50px;
+      padding-top: 20px;
+    }
+
+    .name{
+        font-weight: bold;
+        color: black;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .role{
+        color: gray;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .desc{
+        border: 1px solid gray;
+        margin: 30px ;
+        width: 200px;
+        margin-left: 40px;
+        padding: 10px;
+        font-size: 15px;
+
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        border: 0px;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 16px;
+
+
+    }
+
+
+    /* HELP BUTTON */
+        #help{
+  background-color: red;
+  color: white;
+  width: 70px;
+  height: 40px;
+  border: 0px;
+  border-radius: 20%;
+  font-size: 18px;
+  margin-: 300px;
+  margin-left: 1150px;
+  right: 20px;
+  bottom: 30px;
+}
+ 
+
+
+
+   </style>
+</head>
+<body>
+    <div id="one">
+        <div id="logo">MyWebsite</div>
+        <div id="menu">
+            <a href="#">Home</a>
+            <a href="">|</a>
+            <a href="#">About</a>
+            <a href="">|</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+     <!-- Cards -->
+  <div id="box">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="badge online">ONLINE</div>
+
+      <div class="circle">R</div>
+
+      <div class="name">Rahul</div>
+      <div class="role">Web Developer</div>
+
+      <div class="desc">
+        Builds modern websites using<br>
+        HTML & CSS.
+      </div>
+
+      <button class="btn">View Profile</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="badge offline">OFFLINE</div>
+
+      <div class="circle">N</div>
+
+      <div class="name">Neha</div>
+      <div class="role">UI Designer</div>
+
+      <div class="desc">
+       Designs clean and user-friendly<br>
+        interfaces.
+      </div>
+
+      <button class="btn">View Profile</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="badge online">ONLINE</div>
+
+      <div class="circle">A</div>
+
+      <div class="name">Aman</div>
+      <div class="role">Backend Developer</div>
+
+      <div class="desc">
+        works with server logic and<br>
+       database.
+      </div>
+
+      <button class="btn">View Profile</button>
+    </div>
+
+      <!-- Help Button -->
+  <button id="help">Help</button>
+    
+</body>
+</html>
