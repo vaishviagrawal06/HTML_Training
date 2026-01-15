@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       #parent{
+        border: 3px solid black;
+        width: 1000px;
+        height: 405px;
+        display: flex;
+        /* justify-content: baseline   at same position; */
+        /* justify-content: center; */
+        /* justify-content: end; */
+        /* align-items: baseline; */
+        /* align-items: center; */
+        /* align-items: end; */
+
+       }
+        #parent div{
+            border: 1px solid white;
+            
+            height: 100px;
+            width: 100px;
+        }
+        #parent div:nth-of-type(1){
+            background-color: aqua;
+        }
+        #parent div:nth-of-type(2){
+            background-color: rgb(105, 219, 219);
+        }
+        #parent div:nth-of-type(3){
+            background-color: rgb(69, 207, 207);
+        }
+        #parent div:nth-of-type(4){
+            background-color: rgb(15, 191, 191);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>
