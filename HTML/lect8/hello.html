@@ -4,23 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: cornflowerblue;
+            padding: 30px;
+            /* height: 100px;
+            width: 100px; */
+        }
+        .header{
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .outer_box{
+            height: 300px;
+            width: 800px;
+            color: white;
+            background-color: darkblue;
+
+
+        }
+        .container{
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-    <h2>
+   <div class="header">
+     <h2>
         Flexbox parent properties demo
     </h2>
-   <div class="box">
-     <div class="container">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-     </div>
    </div>
+ <div class=" outer_box">
+
+    
+      <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+      </div>
+
+    </div>
+
+  </div>
     
 </body>
 </html>
