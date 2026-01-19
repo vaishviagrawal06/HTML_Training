@@ -13,9 +13,9 @@
       margin: 20px auto;
 
       position: relative;
-
+      perspective: 1000px;
     }
-    
+
     .a{
       position: absolute;
       top: 0;
@@ -31,7 +31,10 @@
       display: block;
     }
 
-    
+    .parent{
+      transition: 1.5s;
+      transform-style: preserve-3d;
+    }
 
     .parent:hover{
       transform: rotateY(180deg);
@@ -68,7 +71,7 @@
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Explicabo sint totam officia repellendus? Nesciunt nulla animi
-        repellendus quos doloremque porro ad the dignissimos facere rerum officiis?
+        repellendus quos doloremque porro ad dignissimos facere rerum officiis?
       </p>
     </div>
   </div>
