@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flip Card</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate Image</title>
   <style>
-    .parent {
+    .parent{
       height: 500px;
       width: 300px;
       background-color: rgb(249, 249, 249);
@@ -14,67 +13,68 @@
       margin: 20px auto;
 
       position: relative;
-      perspective: 1000px;
-    }
 
-    .card {
-      height: 100%;
-      width: 100%;
-      position: relative;
-      transition: 4s;
-      transform-style: preserve-3d;
-    }
-
-    .parent:hover .card {
-      transform: rotateY(180deg);
     }
 
     .a{
-      position: absolute; 
-      height: 100%;
-      width: 100%;
-      backface-visibility: hidden; 
-    }
-    .b {
-      position: absolute; 
+      position: absolute;
+      top: 0;
+      left: 0;
       height: 100%;
       width: 100%;
       backface-visibility: hidden;
     }
 
-    img {
-      height: 250px;
-      width: 100%;
-      
+    img{
+      height: 500px;
+      width: 300px;
+      display: block;
     }
 
-    .b {
-      background: white;
+    .parent{
+      transition: 1.5s;
+      transform-style: preserve-3d;
+    }
+
+    .parent:hover{
+      transform: rotateY(180deg);
+    }
+
+    .b{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
       padding: 20px;
       box-sizing: border-box;
+
+      background: white;
+      backface-visibility: hidden;
+
       transform: rotateY(180deg);
       display: flex;
-      margin: 20px auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
   </style>
 </head>
-
 <body>
-  <div class="parent">
-    <div class="card">
-      <div class="a">
-        <img src="https://images.unsplash.com/photo-1768590238659-b401ffa9571e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="sky" />
-      </div>
 
-      <div class="b">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sint
-          totam officia repellendus? Nesciunt nulla animi repellendus quos
-          doloremque porro ad dignissimos facere rerum officiis?
-        </p>
-      </div>
+  <div class="parent">
+    <div class="a">
+      <img src="https://images.unsplash.com/photo-1768590238659-b401ffa9571e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sky">
+    </div>
+
+    <div class="b">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Explicabo sint totam officia repellendus? Nesciunt nulla animi
+        repellendus quos doloremque porro ad dignissimos facere rerum officiis?
+      </p>
     </div>
   </div>
+
 </body>
 </html>
