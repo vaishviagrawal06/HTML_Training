@@ -27,35 +27,95 @@
       color: rgb(196, 20, 155);
     }
 
-    /* ✅ Common Balloon style */
-    .balloon {
-      position: absolute;
+
+    .b1 {
+          position: absolute;
       width: 90px;
       height: 120px;
       border-radius: 60%;
-    }
-
-    /* ✅ b1 Balloon */
-    .b1 {
-      background: red;
-      left: 60px;
+      background: rgb(255, 0, 0);
+      left: 200px;
       top: 520px;
 
-      animation: fly1 3s linear infinite;
+          animation-name: fly;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
     }
 
-    /* ✅ b1 Animation */
-    @keyframes fly1 {
-      0% {
+    .b2 {
+          position: absolute;
+      width: 90px;
+      height: 120px;
+      border-radius: 60%;
+      background: rgb(140, 196, 61);
+      left: 400px;
+      top: 520px;
+
+          animation-name: fly;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+    }
+
+     .b3 {
+          position: absolute;
+      width: 90px;
+      height: 120px;
+      border-radius: 60%;
+      background: hotpink;
+      left: 600px;
+      top: 520px;
+
+          animation-name: fly;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+    }
+
+    
+     .b4 {
+          position: absolute;
+      width: 90px;
+      height: 120px;
+      border-radius: 60%;
+      background: rgb(0, 255, 102);
+      left: 800px;
+      top: 520px;
+
+          animation-name: fly;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+    }
+
+    
+    
+     .b5 {
+          position: absolute;
+      width: 90px;
+      height: 120px;
+      border-radius: 60%;
+      background: rgb(0, 170, 255);
+      left: 1000px;
+      top: 520px;
+
+          animation-name: fly;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+    }
+
+   @keyframes fly{
+     0% {
         transform: translateY(0) translateX(0);
       }
-      50% {
-        transform: translateY(-300px) translateX(30px);
+
+      100%{
+        transform: translateY(-650px) translateX(-50px);
       }
-      100% {
-        transform: translateY(-650px) translateX(-30px);
-      }
-    }
+
+   }
   </style>
 </head>
 
@@ -63,5 +123,9 @@
   <h1>🎉 WELCOME TO THE BALLOON FESTEVIAL 🎈</h1>
 
   <div class="balloon b1"></div>
+  <div class="balloon b2"></div>
+  <div class="balloon b3"></div>
+  <div class="balloon b4"></div>
+  <div class="balloon b5"></div>
 </body>
 </html>
