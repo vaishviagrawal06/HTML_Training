@@ -7,9 +7,33 @@
     <style>
         .parent
         {
-            border: 3px solid ;
+            border: 3px solid black;
             height: 800px;
-            
+            display: grid;
+            background-color: antiquewhite;
+            /* margin: 20px; */
+            grid-template-columns:200px 200px 200px;
+            grid-template-rows:200px ;
+
+
+        }
+        .child{
+            background-color: aliceblue;
+            border: 1px solid black;
+        }
+        #one{
+background-color: aqua;
+border: 3px solid blue;
+grid-column-start: 2;
+grid-column-end: 3;
+        }
+        #seven{
+background-color: rgb(52, 218, 157);
+border: 3px solid blue;
+        }
+        #nine{
+background-color: rgb(255, 217, 0);
+border: 3px solid blue;
         }
     </style>
 </head>
