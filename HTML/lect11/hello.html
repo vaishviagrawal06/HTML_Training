@@ -5,23 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         .parent
-        {
-            border: 3px solid black;
-            height: 800px;
-            width: 700px;
-            display: grid;
-            background-color: antiquewhite;
-            /* margin: 20px; */
-            grid-template-columns:200px 200px 200px;
-            grid-template-rows:200px ;
-            gap: 20px ;
+         .parent {
+      border: 3px solid black;
+      width: 700px;
+      height: 800px;
+      display: grid;
+      background-color: antiquewhite;
 
-            /* grid-template-columns: 1fr 1fr 1fr; */
-            /* grid-template-rows: 200px 200px 200px; */
-
-
-        }
+      grid-template-columns: repeat(3, 200px);
+      grid-auto-rows: 200px; 
+      gap: 20px;
+      padding: 20px;
+    }
         .child{
             background-color: aliceblue;
             border: 1px solid black;
@@ -51,3 +46,65 @@
     
 </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Images</title>
+
+  <style>
+    .parent {
+      border: 3px solid black;
+      width: 700px;
+      height: 800px;
+      display: grid;
+      background-color: antiquewhite;
+
+      grid-template-columns: repeat(3, 200px);
+      grid-auto-rows: 200px; /* ✅ auto rows */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .child {
+      background-color: aliceblue;
+      border: 1px solid black;
+      overflow: hidden; /* ✅ image bahar na nikle */
+    }
+
+    .child img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* ✅ image fit nicely */
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="child" id="one">
+      <img src="https://images.unsplash.com/photo-1768409234914-96f61529b7e2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="1">
+    </div>
+
+    <div class="child" id="two">
+      <img src="https://images.unsplash.com/photo-1768391267094-b5c289a0b395?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="2">
+    </div>
+
+    <div class="child" id="three">
+      <img src="https://plus.unsplash.com/premium_photo-1766012368210-14b362ad9805?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="3">
+    </div>
+
+    <div class="child" id="four">
+      <img src="https://images.unsplash.com/photo-1768432983836-84dde84cdbd9?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="4">
+    </div>
+
+    <div class="child" id="five">
+      <img src="https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="5">
+    </div>
+  </div>
+</body>
+</html>
+ -->
