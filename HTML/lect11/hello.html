@@ -8,9 +8,9 @@
          .parent {
       border: 3px solid black;
       /* width: 700px; */
-      height: 600px;
+      /* height: 600px; */
       display: grid;
-      background-color: rgb(252, 247, 240);
+      background-color: rgba(229, 136, 6, 0.548);
 justify-content: center;
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: 200px; 
@@ -18,7 +18,7 @@ justify-content: center;
       padding: 20px;
     }
         .child{
-            background-color: aliceblue;
+            background-color: rgb(224, 230, 235);
             border: 1px solid black;
             overflow: hidden;
         
@@ -26,7 +26,11 @@ justify-content: center;
         .child img{
             height: 100%;
             width: 100%;
-            display: block;
+            /* display: block; */
+            background-size: cover;
+         transition: transform 0.4s ease;
+         object-fit: cover;
+
         }
         #two{
             grid-row:span 2;
