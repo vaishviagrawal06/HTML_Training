@@ -7,12 +7,12 @@
     <style>
          .parent {
       border: 3px solid black;
-      width: 700px;
+      /* width: 700px; */
       height: 800px;
       display: grid;
       background-color: rgb(252, 247, 240);
 justify-content: center;
-      grid-template-columns: repeat(3, 200px);
+      grid-template-columns: repeat(3,);
       grid-auto-rows: 200px; 
       gap: 10px;
       padding: 20px;
@@ -30,11 +30,6 @@ justify-content: center;
         }
         #two{
             grid-row:span 2;
-            /* grid-column-start: 1;
-             grid-column-end: 1;
-
-grid-row-start: 1;
-grid-row-end:3 ; */
         }
 
 
@@ -61,76 +56,3 @@ grid-row-end:3 ; */
     
 </body>
 </html>
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Images</title>
-
-    <style>
-        .parent {
-            border: 3px solid black;
-            width: 700px;
-            height: 800px;
-            display: grid;
-            background-color: rgb(252, 247, 240);
-
-            grid-template-columns: repeat(3, 200px);
-            grid-auto-rows: 200px;
-            gap: 10px;
-            padding: 20px;
-
-            justify-content: center; /* ✅ center align grid */
-        }
-
-        .child {
-            background-color: aliceblue;
-            border: 1px solid black; /* ✅ fixed */
-            overflow: hidden;
-            border-radius: 10px; /* ✅ optional (nice look) */
-        }
-
-        .child img {
-            height: 100%;
-            width: 100%;
-            display: block;
-            object-fit: cover; /* ✅ image fit properly */
-        }
-
-        /* ✅ Middle image ko bada karne ke liye */
-        #two {
-            grid-row: span 2; /* ✅ 2 rows cover karega */
-        }
-
-    </style>
-</head>
-<body>
-
-    <div class="parent">
-
-        <div class="child" id="one">
-            <img src="https://images.unsplash.com/photo-1768409234914-96f61529b7e2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="1">
-        </div>
-
-        <div class="child" id="two">
-            <img src="https://images.unsplash.com/photo-1768391267094-b5c289a0b395?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="2">
-        </div>
-
-        <div class="child" id="three">
-            <img src="https://plus.unsplash.com/premium_photo-1766012368210-14b362ad9805?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="3">
-        </div>
-
-        <div class="child" id="four">
-            <img src="https://images.unsplash.com/photo-1768432983836-84dde84cdbd9?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="4">
-        </div>
-
-        <div class="child" id="five">
-            <img src="https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="5">
-        </div>
-
-    </div>
-
-</body>
-</html>
- -->
