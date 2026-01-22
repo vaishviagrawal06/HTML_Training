@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaishvi Agrawal | Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    body{ font-family: "Inter", sans-serif; }
+    .serif{ font-family: "Playfair Display", serif; }
+  </style>
+</head>
+
+<body class="bg-[#0b0b0b] text-white">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-[#0b0b0b]/80 backdrop-blur border-b border-white/5">
+    <nav class="max-w-7xl mx-auto px-5 md:px-10 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">
+        Port<span class="text-orange-500">folio</span>
+      </h1>
+
+      <ul class="hidden md:flex items-center gap-10 text-sm text-white/70">
+        <li><a class="hover:text-white transition" href="#home">Home</a></li>
+        <li><a class="hover:text-white transition" href="#about">About</a></li>
+        <li><a class="hover:text-white transition" href="#work">Work</a></li>
+        <li><a class="hover:text-white transition" href="#skills">Skills</a></li>
+        <li><a class="hover:text-white transition" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <button class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition">
+          ☼
+        </button>
+
+        <a href="#contact" class="px-5 py-2 rounded-xl bg-white text-black font-semibold hover:opacity-90 transition">
+          Let's Talk
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="max-w-7xl mx-auto px-5 md:px-10 py-14 md:py-20">
+    <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+      <!-- Left -->
+      <div>
+        <p class="text-orange-500 tracking-widest text-sm font-semibold mb-4">
+          WELCOME TO MY PORTFOLIO
+        </p>
+
+        <h2 class="text-5xl md:text-6xl font-extrabold leading-tight">
+          Hi, I'm
+          <span class="serif italic bg-gradient-to-r from-orange-400 via-emerald-300 to-teal-400 bg-clip-text text-transparent">
+            Vaishvi
+          </span>
+        </h2>
+
+        <h3 class="text-5xl md:text-6xl font-extrabold leading-tight text-white/45">
+          CSE Student
+        </h3>
+
+        <p class="mt-6 text-white/60 leading-relaxed max-w-xl">
+          I'm a 2nd year CSE student. I love building clean and responsive websites using HTML, CSS, Bootstrap and Tailwind.
+          I also enjoy programming in C, C++ and Java.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#work"
+            class="px-7 py-3 rounded-2xl bg-white text-black font-semibold flex items-center gap-2 hover:opacity-90 transition">
+            View My Work
+            <span class="text-lg">↓</span>
+          </a>
+
+          <a href="#"
+            class="px-7 py-3 rounded-2xl border border-white/15 text-white font-semibold hover:bg-white/5 transition">
+            Download Resume
+          </a>
+        </div>
+
+        <div class="mt-10 flex gap-4">
+          <a href="#" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-white/5 transition">
+            ⌂
+          </a>
+          <a href="#" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-white/5 transition">
+            in
+          </a>
+          <a href="#" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-white/5 transition">
+            🐦
+          </a>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="relative flex justify-center lg:justify-end">
+        <div class="relative w-[320px] h-[320px] md:w-[420px] md:h-[420px] rounded-full border border-orange-500/30">
+          <div class="absolute inset-4 rounded-full border border-orange-500/40 border-dashed"></div>
+
+          <!-- ✅ photo: replace this image with your uploaded photo -->
+          <div class="absolute inset-8 rounded-full overflow-hidden bg-white/10 border border-white/10">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=900&auto=format&fit=crop"
+              class="w-full h-full object-cover"
+              alt="Vaishvi Photo"
+            />
+          </div>
+
+          <!-- stats -->
+          <div class="absolute left-[-30px] bottom-[70px] bg-[#121212] border border-white/10 rounded-2xl px-6 py-4 shadow-xl">
+            <h4 class="text-4xl font-extrabold text-emerald-300">2+</h4>
+            <p class="text-white/50 text-sm">Projects</p>
+          </div>
+
+          <div class="absolute right-[-20px] top-[90px] bg-[#121212] border border-white/10 rounded-2xl px-6 py-4 shadow-xl">
+            <h4 class="text-4xl font-extrabold text-orange-400">2nd</h4>
+            <p class="text-white/50 text-sm">Year CSE</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-7xl mx-auto px-5 md:px-10 py-20">
+    <div class="text-center">
+      <p class="text-orange-500 tracking-widest text-sm font-semibold mb-3">ABOUT ME</p>
+      <h2 class="text-4xl md:text-6xl font-extrabold">
+        Passionate about creating <span class="serif italic">digital magic</span>
+      </h2>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-2 gap-10 items-start">
+      <div class="text-white/60 leading-relaxed text-lg">
+        <p>
+          I'm <b class="text-white">Vaishvi Agrawal</b>, a 2nd year Computer Science student.
+          I enjoy developing modern, responsive websites and learning new technologies.
+        </p>
+        <p class="mt-6">
+          I'm focused on improving my frontend skills and building real projects that enhance my practical learning.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div class="rounded-3xl bg-white/5 border border-white/10 p-8">
+          <h3 class="text-5xl font-extrabold text-orange-400">2+</h3>
+          <p class="text-white/50 mt-2">Projects Completed</p>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 border border-white/10 p-8">
+          <h3 class="text-5xl font-extrabold text-emerald-300">6+</h3>
+          <p class="text-white/50 mt-2">Skills Learned</p>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 border border-white/10 p-8">
+          <h3 class="text-5xl font-extrabold">2nd</h3>
+          <p class="text-white/50 mt-2">Year Student</p>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 border border-white/10 p-8">
+          <h3 class="text-5xl font-extrabold">100%</h3>
+          <p class="text-white/50 mt-2">Learning Mindset</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="max-w-7xl mx-auto px-5 md:px-10 py-20">
+    <div class="text-center">
+      <p class="text-orange-500 tracking-widest text-sm font-semibold mb-3">MY WORK</p>
+      <h2 class="text-4xl md:text-6xl font-extrabold">
+        Featured <span class="serif italic">Projects</span>
+      </h2>
+      <p class="mt-4 text-white/55 max-w-2xl mx-auto">
+        Here are some projects I built while learning programming and web development.
+      </p>
+    </div>
+
+    <!-- Project 1 -->
+    <div class="mt-14 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="rounded-[36px] bg-white/5 border border-white/10 p-6 overflow-hidden">
+        <img class="rounded-3xl w-full"
+          src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+          alt="project" />
+      </div>
+
+      <div>
+        <p class="text-orange-500 font-semibold tracking-wide">C + File Handling</p>
+        <h3 class="text-4xl md:text-5xl font-extrabold mt-3">Bank Management System</h3>
+        <p class="text-white/55 mt-4 leading-relaxed">
+          A console-based project to manage multiple bank accounts using file handling and basic operations.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">C</span>
+          <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">File Handling</span>
+          <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">Logic</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="mt-16 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="order-2 lg:order-1">
+        <p class="text-orange-500 font-semibold tracking-wide">Web Project</p>
+        <h3 class="text-4xl md:text-5xl font-extrabold mt-3">Student Portal</h3>
+        <p class="text-white/55 mt-4 leading-relaxed">
+          A student portal design using HTML and CSS with a clean layout and responsive structure.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">HTML</span>
+          <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">CSS</span>
+          <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">Responsive</span>
+        </div>
+
+        <button class="mt-8 px-7 py-3 rounded-2xl border border-white/15 hover:bg-white/5 transition font-semibold">
+          View Project ↗
+        </button>
+      </div>
+
+      <div class="order-1 lg:order-2 rounded-[36px] bg-white/5 border border-white/10 overflow-hidden p-6">
+        <img class="rounded-3xl w-full"
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+          alt="project" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="max-w-7xl mx-auto px-5 md:px-10 py-20">
+    <div class="text-center">
+      <p class="text-orange-500 tracking-widest text-sm font-semibold mb-3">MY SKILLS</p>
+      <h2 class="text-4xl md:text-6xl font-extrabold">
+        Tools & <span class="serif italic">Technologies</span>
+      </h2>
+      <p class="mt-4 text-white/55 max-w-2xl mx-auto">
+        I’m continuously learning and improving my skills in programming & frontend development.
+      </p>
+    </div>
+
+    <div class="mt-14 flex flex-wrap justify-center gap-4">
+      <span class="px-6 py-3 rounded-full bg-white/5 border border-white/10">HTML</span>
+      <span class="px-6 py-3 rounded-full bg-white/5 border border-white/10">CSS</span>
+      <span class="px-6 py-3 rounded-full bg-white/5 border border-white/10">C</span>
+      <span class="px-6 py-3 rounded-full bg-white/5 border border-white/10">C++</span>
+      <span class="px-6 py-3 rounded-full bg-white/5 border border-white/10">Java</span>
+      <span class="px-6 py-3 rounded-full bg-white/5 border border-white/10">Bootstrap</span>
+      <span class="px-6 py-3 rounded-full bg-orange-500/10 border border-orange-500/40 text-orange-300">
+        Tailwind CSS
+      </span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-7xl mx-auto px-5 md:px-10 py-20">
+    <div class="text-center">
+      <p class="text-orange-500 tracking-widest text-sm font-semibold mb-3">GET IN TOUCH</p>
+      <h2 class="text-4xl md:text-6xl font-extrabold">
+        Let’s Work <span class="serif italic">Together</span>
+      </h2>
+      <p class="mt-4 text-white/55 max-w-2xl mx-auto">
+        Want to connect with me? Feel free to send a message!
+      </p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-2 gap-10 items-start">
+
+      <!-- Contact info -->
+      <div class="space-y-6">
+        <div class="flex gap-4 items-center">
+          <div class="w-14 h-14 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center">
+            ✉
+          </div>
+          <div>
+            <p class="font-semibold">Email</p>
+            <p class="text-white/55">vaishviagrawal06@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-center">
+          <div class="w-14 h-14 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center">
+            ☎
+          </div>
+          <div>
+            <p class="font-semibold">Phone</p>
+            <p class="text-white/55">9xxxxxxxxx</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-center">
+          <div class="w-14 h-14 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center">
+            ⦿
+          </div>
+          <div>
+            <p class="font-semibold">Location</p>
+            <p class="text-white/55">Indore, MP</p>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 border border-white/10 p-8 mt-8">
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+            <p class="font-semibold">Available for Learning</p>
+          </div>
+          <p class="text-white/55 mt-3">
+            I’m actively learning and building projects. Open to internships and collaborations.
+          </p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form class="rounded-[36px] bg-white/5 border border-white/10 p-8">
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label class="text-sm text-white/60">Your Name</label>
+            <input type="text" placeholder="John Doe"
+              class="mt-2 w-full px-4 py-3 rounded-2xl bg-black/30 border border-white/10 outline-none focus:border-orange-500 transition" />
+          </div>
+
+          <div>
+            <label class="text-sm text-white/60">Your Email</label>
+            <input type="email" placeholder="john@example.com"
+              class="mt-2 w-full px-4 py-3 rounded-2xl bg-black/30 border border-white/10 outline-none focus:border-orange-500 transition" />
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <label class="text-sm text-white/60">Subject</label>
+          <input type="text" placeholder="Project Inquiry"
+            class="mt-2 w-full px-4 py-3 rounded-2xl bg-black/30 border border-white/10 outline-none focus:border-orange-500 transition" />
+        </div>
+
+        <div class="mt-5">
+          <label class="text-sm text-white/60">Message</label>
+          <textarea rows="5" placeholder="Tell me about your message..."
+            class="mt-2 w-full px-4 py-3 rounded-2xl bg-black/30 border border-white/10 outline-none focus:border-orange-500 transition resize-none"></textarea>
+        </div>
+
+        <button type="submit"
+          class="mt-6 w-full py-4 rounded-2xl bg-white text-black font-bold flex items-center justify-center gap-2 hover:opacity-90 transition">
+          Send Message <span>✈</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-5 md:px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <h2 class="text-xl font-bold">
+        Port<span class="text-orange-500">folio</span>
+      </h2>
+
+      <p class="text-white/50 text-sm">
+        Made with <span class="text-orange-500">♥</span> by Vaishvi © 2026
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
