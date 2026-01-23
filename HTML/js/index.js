@@ -4,5 +4,12 @@ let btn = document.querySelector('button')
 let body = document.querySelector('body')
 
 btn.addEventListener("click",function(){
-    body.style.backgroundColor='lightblue'
-})
+    if( body.style.backgroundColor==='lightblue'){
+        body.style.backgroundColor='white';
+    }
+    else{
+
+      body.style.backgroundColor='lightblue';  
+    }
+   
+});
