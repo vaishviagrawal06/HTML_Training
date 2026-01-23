@@ -4,5 +4,5 @@ let btn = document.querySelector('button')
 let body = document.querySelector('body')
 
 btn.addEventListener("click",function(){
-    body.style.backgroundcolor='blue'
+    body.style.backgroundColor='lightblue'
 })
