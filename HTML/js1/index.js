@@ -6,8 +6,20 @@ pen.fillStyle ='yellow'
 let cell=50;
 let cellQ=[[0,0]]
 
+
+
 function draw(){
+
+    pen.clearRect(0,0,1000,600)
     for(let i of cellQ){
         pen.fillRect(i[0],i[i],cell,cell)
     }
+}
+
+function update(){
+    let x= cellQ[cellQ.length-1][0]
+    let y= cellQ[cellQ.length-1][1]
+
+    let newX= x+cell
+    
 }
