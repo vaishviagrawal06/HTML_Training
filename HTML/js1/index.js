@@ -37,22 +37,31 @@ function update() {
     let newX = x;
     let newY = y;
 
-    if (direction === 'right') {
+    if (direction == 'right') {
         newX = x + cell;
+        newY=y
+        if(newX==700){
+            gameOver=true;
+        }
     }
-    else if (direction === 'left') {
+    else if (direction == 'left') {
         newX = x - cell;
+        if(newX==700){
+            gameOver=true;
+        }
     }
-    else if (direction === 'up') {
+    else if (direction == 'up') {
         newY = y - cell;
     }
-    else if (direction === 'down') {
+    else if (direction == 'down') {
         newY = y + cell;
     }
 
     cellQ.push([newX, newY]);
     cellQ.shift();
 }
+
+
 
 setInterval(() => {
     update();
