@@ -1,51 +1,60 @@
-let canvas = document.querySelector("canvas")
+let canvas = document.querySelector("canvas");
+let pen = canvas.getContext("2d");
 
-let pen=canvas.getContext("2d")
-pen.fillStyle ='yellow'
-// pen.fillRect(0,0,30,30)
-let cell=50;
-let cellQ=[[0,0]]
+pen.fillStyle = 'yellow';
 
-document.addEventListener("keydown",function(e){
+let cell = 50;
+let cellQ = [[0, 0]];
+let direction = "right"; 
 
-    if(e.key=='ArrowDown'){
-         direction='down'
-    }else if(e.key=='Arrowup'){
-        direction='up'
+document.addEventListener("keydown", function (e) {
+
+    if (e.key == 'ArrowDown') {
+        direction = 'down';
+    } 
+    else if (e.key == 'ArrowUp') {
+        direction = 'up';
     }
-    else if(e.key=='ArrowLeft'){
-         direction='left'
+    else if (e.key =='ArrowLeft') {
+        direction = 'left';
     }
-    else{
-        direction='right'
+    else if (e.key == 'ArrowRight') {
+        direction = 'right';
     }
-    
-        
+});
 
-})
-
-function draw(){
-
-    pen.clearRect(0,0,1000,600)
-    for(let i of cellQ){
-        pen.fillRect(i[0],i[1],cell,cell)
+function draw() {
+    pen.clearRect(0, 0, 1000, 600);
+    for (let i of cellQ) {
+        pen.fillRect(i[0], i[1], cell, cell);
     }
 }
 
-function update(){
-    let x= cellQ[cellQ.length-1][0]
-    let y= cellQ[cellQ.length-1][1]
+function update() {
+    let x = cellQ[cellQ.length - 1][0];
+    let y = cellQ[cellQ.length - 1][1];
 
-//     let newX= x+cell
-//     let newY=y
-//   cellQ.push([newX,newY])
-//     cellQ.shift()
+    let newX = x;
+    let newY = y;
 
+    if (direction === 'right') {
+        newX = x + cell;
+    }
+    else if (direction === 'left') {
+        newX = x - cell;
+    }
+    else if (direction === 'up') {
+        newY = y - cell;
+    }
+    else if (direction === 'down') {
+        newY = y + cell;
+    }
 
-
+    cellQ.push([newX, newY]);
+    cellQ.shift();
 }
-setInterval(()=>{
-    draw()
-    update()
-},500)
 
+setInterval(() => {
+    update();
+    draw();
+}, 300);
