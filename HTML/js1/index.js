@@ -6,7 +6,23 @@ pen.fillStyle ='yellow'
 let cell=50;
 let cellQ=[[0,0]]
 
-document.addEventListener("keydown",)
+document.addEventListener("keydown",function(e){
+
+    if(e.key=='ArrowDown'){
+         direction='down'
+    }elseif(e.key=='Arrowup'){
+        direction='up'
+    }
+    elseif(e.key=='ArrowLeft'){
+         direction='left'
+    }
+    else{
+        direction='right'
+    }
+    
+        
+
+})
 
 function draw(){
 
