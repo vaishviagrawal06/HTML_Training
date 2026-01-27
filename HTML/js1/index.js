@@ -10,10 +10,10 @@ document.addEventListener("keydown",function(e){
 
     if(e.key=='ArrowDown'){
          direction='down'
-    }elseif(e.key=='Arrowup'){
+    }else if(e.key=='Arrowup'){
         direction='up'
     }
-    elseif(e.key=='ArrowLeft'){
+    else if(e.key=='ArrowLeft'){
          direction='left'
     }
     else{
@@ -36,10 +36,12 @@ function update(){
     let x= cellQ[cellQ.length-1][0]
     let y= cellQ[cellQ.length-1][1]
 
-    let newX= x+cell
-    let newY=y
-  cellQ.push([newX,newY])
-    cellQ.shift()
+//     let newX= x+cell
+//     let newY=y
+//   cellQ.push([newX,newY])
+//     cellQ.shift()
+
+
 
 }
 setInterval(()=>{
