@@ -21,5 +21,11 @@ function update(){
     let y= cellQ[cellQ.length-1][1]
 
     let newX= x+cell
-    
+    let newY=ycellQ.push([newX,newY])
+    cellQ.shift()
+
 }
+setInterval(()=>{
+    draw()
+    update()
+},500)
