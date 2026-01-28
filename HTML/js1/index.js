@@ -1,6 +1,8 @@
-let canvas=   document.querySelector("canvas")
+
+   let canvas=   document.querySelector("canvas")
   let pen=  canvas.getContext("2d")
    pen.fillStyle='gold'
+   let count=0;
    let cell=50
    let cellQ=[[0,0]]
    let gameOver=false
@@ -10,7 +12,7 @@ let canvas=   document.querySelector("canvas")
  let id=  setInterval(()=>{
     draw()
     update()
-   },500)
+   },200)
      document.addEventListener("keydown",function(e){
         // console.log(e);
         if(e.key=='ArrowDown'){
@@ -30,18 +32,19 @@ let canvas=   document.querySelector("canvas")
     if(gameOver==true){
         clearInterval(id)
         pen.fillStyle='snow'
-        pen.fillText("Game Over",1000,300)
+        pen.fillText("Game Over" ,100,300)
         return;
     }
-    pen.fillStyle='red'
+       pen.fillStyle='red'
     pen.clearRect(0,0,1000,600)
     for(let i of cellQ){
         pen.fillRect(i[0],i[1],cell,cell)
     }
-    pen.font='20px sans-sarif'
-    pen.fillText(`Score ${count}`,40,100)
+       pen.font='20px sans-sarif'
+        pen.fillText(`Score ${count}`,40,100)
     pen.fillStyle='green'
     pen.fillRect(randomC[0],randomC[1],cell,cell)
+
 
    }
 
@@ -92,4 +95,9 @@ let canvas=   document.querySelector("canvas")
  cellQ.push([newX,nexY])
 
    }
-
+     function generateRandomCell(){
+        return[
+            Math.floor(Math.random()*650/50)*50,
+            Math.floor(Math.random()*350/50)*50
+        ]
+     }
