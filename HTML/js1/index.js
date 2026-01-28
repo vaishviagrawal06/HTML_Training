@@ -14,7 +14,7 @@
     update()
    },200)
      document.addEventListener("keydown",function(e){
-        // console.log(e);
+       
         if(e.key=='ArrowDown'){
             direction='down'
         }else if(e.key=='ArrowUp'){
