@@ -36,7 +36,8 @@ function draw() {
     }
     pen.fillStyle = 'red'
     pen.clearRect(0, 0, 1000, 600)
-    for (let i of cellQ) {
+    for (let i of cellQ) 
+    {
         pen.fillRect(i[0], i[1], cell, cell)
     }
     pen.font = '20px sans-sarif'
