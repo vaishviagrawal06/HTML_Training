@@ -28,7 +28,7 @@
      })
 
    function draw(){
-    // for()
+   
     if(gameOver==true){
         clearInterval(id)
         pen.fillStyle='snow'
