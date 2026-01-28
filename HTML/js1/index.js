@@ -28,7 +28,8 @@ document.addEventListener("keydown", function (e) {
 
 function draw() {
 
-    if (gameOver == true) {
+    if (gameOver == true)
+    {
         clearInterval(id)
         pen.fillStyle = 'snow'
         pen.fillText("Game Over", 100, 300)
