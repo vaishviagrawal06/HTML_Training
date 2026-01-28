@@ -26,7 +26,8 @@ document.addEventListener("keydown", function (e) {
     }
 })
 
-function draw() {
+function draw() 
+{
 
     if (gameOver == true)
     {
