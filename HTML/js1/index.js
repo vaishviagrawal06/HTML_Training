@@ -38,6 +38,10 @@ let canvas=   document.querySelector("canvas")
     for(let i of cellQ){
         pen.fillRect(i[0],i[1],cell,cell)
     }
+    pen.font='20px sans-sarif'
+    pen.fillText(`Score ${count}`,40,100)
+    pen.fillStyle='green'
+    pen.fillRect(randomC[0],randomC[1],cell,cell)
 
    }
 
