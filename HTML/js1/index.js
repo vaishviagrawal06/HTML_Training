@@ -63,7 +63,8 @@ function update() {
     else if (direction == 'left') {
         newX = x - cell;
         nexY = y
-        if (newX < 0) {
+        if (newX < 0) 
+        {
             gameOver = true
         }
     }
