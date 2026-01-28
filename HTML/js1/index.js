@@ -56,7 +56,8 @@ function update() {
     if (direction == 'right') {
         newX = x + cell;
         nexY = y
-        if (newX == 700) {
+        if (newX == 700) 
+        {
             gameOver = true
         }
     }
