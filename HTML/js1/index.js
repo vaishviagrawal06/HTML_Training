@@ -78,7 +78,8 @@ function update() {
     else {
         newX = x
         nexY = y - cell
-        if (nexY < 0) {
+        if (nexY < 0) 
+        {
             gameOver = true
         }
     }
