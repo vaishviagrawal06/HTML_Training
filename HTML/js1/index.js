@@ -18,7 +18,8 @@ document.addEventListener("keydown", function (e) {
         direction = 'down'
     } else if (e.key == 'ArrowUp') {
         direction = 'up'
-    } else if (e.key == 'ArrowLeft') {
+    } else if (e.key == 'ArrowLeft') 
+    {
         direction = 'left'
     }
     else {
