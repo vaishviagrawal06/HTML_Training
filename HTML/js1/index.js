@@ -12,7 +12,8 @@ let id = setInterval(() => {
     draw()
     update()
 }, 200)
-document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", function (e) 
+{
 
     if (e.key == 'ArrowDown') 
     {
