@@ -14,9 +14,11 @@ let id = setInterval(() => {
 }, 200)
 document.addEventListener("keydown", function (e) {
 
-    if (e.key == 'ArrowDown') {
+    if (e.key == 'ArrowDown') 
+    {
         direction = 'down'
-    } else if (e.key == 'ArrowUp') {
+    } else if (e.key == 'ArrowUp') 
+    {
         direction = 'up'
     } else if (e.key == 'ArrowLeft') 
     {
