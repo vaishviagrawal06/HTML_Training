@@ -11,4 +11,9 @@ class area
     int calculateArea(int l, int b){
         return l* b;
     }
+};
+
+int main()
+{
+
 }
