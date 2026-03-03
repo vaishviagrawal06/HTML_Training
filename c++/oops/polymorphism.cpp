@@ -12,8 +12,12 @@ class area
         return l* b;
     }
 };
-
 int main()
 {
+    area a;
 
+    cout << "Area of Circle: " << a.calculateArea(5) << endl;
+    cout << "Area of Rectangle: " << a.calculateArea(4, 6) << endl;
+
+    return 0;
 }
